@@ -1,4 +1,7 @@
-# create-func-com （ts 语言）
+# vscode 插件 - create-func-com （ts 语言）
+ - 快速生成react框架的页面模板代码目录
+  1. 可生成页面模板
+  2. 可生成组件模板
 
 1. 一键生成 react 函数式组件模板代码
 
