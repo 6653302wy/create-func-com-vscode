@@ -1,10 +1,34 @@
 export const tsxTemplate = (comName: string): string => {
-  return `import { FunctionComponent, ReactElement } from 'react';
+  return `import { FunctionComponent, ReactElement, useCallback, useEffect, useState } from 'react';
 import styles from './styles.css';
 
 export const ${comName}: FunctionComponent = (): ReactElement => {
-    return <div className={styles.container}>${comName}</div>;
+  const [count, setCounter] = useState(0);
+
+  const onBtnClick = useCallback(() => {
+    setCounter((pre) => {
+      return pre + 1;
+    });
+  }, []);
+
+  // when count update
+  useEffect(() => {
+    console.log('oh, state count has updated!!!');
+  }, [count]);
+
+  // when deps is empty, it means component initliaze
+  useEffect(() => {
+    setCounter(1);
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <p>{count}</p>
+      <button onClick={onBtnClick}>click me</button>
+    </div>
+  );
 };
+
 ${comName}.displayName = '${comName}';`;
 };
 
@@ -15,10 +39,11 @@ export const cssTemplate = (): string => {
 };
 
 export const pageIndexTemplate = (): string => {
-  return `import { render } from 'react-dom';
+  return `import { createRoot } from 'react-dom/client';
 import { App } from './components/App';
       
-render(<App />, document.getElementById('root'));`;
+const root = createRoot(document.getElementById('root') as HTMLElement);
+root.render(<App />);`;
 };
 
 export const pageHtmlTemplate = (): string => {
@@ -32,19 +57,10 @@ export const pageHtmlTemplate = (): string => {
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no" />
-        <!-- 添加开始时间 -->
-        <%= htmlWebpackPlugin.options.startTime %>
         <title>新页面</title>
     </head>
     <body>
         <div id="root"></div>
-        
-        <!-- cnzz统计 -->
-        <%= htmlWebpackPlugin.options.cnzz %>
-        <!-- 载入servicework -->
-        <%= htmlWebpackPlugin.options.serviceWorker %>
-        <!-- 调试工具插件 -->
-        <%= htmlWebpackPlugin.options.eruda %>
     </body>
 </html>
   `;

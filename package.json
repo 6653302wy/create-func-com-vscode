@@ -2,7 +2,7 @@
 	"name": "create-func-com",
 	"displayName": "create-func-com",
 	"description": "右键创建函数式组件",
-	"version": "0.1.0",
+	"version": "0.2.1",
 	"keywords": [
 		"react",
 		"模板",
@@ -16,6 +16,10 @@
 		"生成"
 	],
 	"publisher": "wanpp",
+	"repository": {
+		"type": "git",
+		"url": "git@jihulab.com:villaland/frontend/vgene-utils.git"
+	},
 	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.52.0"
@@ -32,11 +36,11 @@
 		"commands": [
 			{
 				"command": "create-func-com.component",
-				"title": "创建函数式组件"
+				"title": "创建react函数式组件"
 			},
 			{
 				"command": "create-func-com.page",
-				"title": "创建页面"
+				"title": "创建react页面"
 			}
 		],
 		"menus": {
