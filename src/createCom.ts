@@ -49,7 +49,7 @@ export const startCreateCom = (uri: string, comName?: string) => {
 
         createFolders();
       },
-      "recommend: TestComponentName"
+      "exp: TestComponentName"
     );
   }
 };

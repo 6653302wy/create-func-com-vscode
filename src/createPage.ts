@@ -83,6 +83,6 @@ export const startCreatePage = (uri: string) => {
       //   createFolders();
       // });
     },
-    "recommend: test-page-name"
+    "exp: test-page-name"
   );
 };
