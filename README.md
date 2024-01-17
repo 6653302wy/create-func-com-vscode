@@ -1,4 +1,5 @@
 # create-func-com
+
 [中文说明](https://github.com/6653302wy/create-func-com-vscode/blob/master/README.cn.md)
 
 a vscode extension about react component generater  
@@ -14,7 +15,7 @@ a vscode extension about react component generater
 
 ### Use
 
-In the vscode explorer, select the root folder where the component or page needs to be created, and select the "generate component" or "generate page" option from the right-click menu.
+In the vscode explorer, select the root folder where the component or page needs to be created, and select the "Generate component(react)" or "Generate page(react)" option from the right-click menu.
 
 ### Generated code structure:
 
