@@ -1,8 +1,8 @@
 export const tsxTemplate = (comName: string): string => {
-  return `import { FunctionComponent, ReactElement, useCallback, useEffect, useState } from 'react';
+  return `import { FC, ReactElement, useCallback, useEffect, useState } from 'react';
 import styles from './styles.css';
 
-export const ${comName}: FunctionComponent = (): ReactElement => {
+export const ${comName}: FC = (): ReactElement => {
   const [count, setCounter] = useState(0);
 
   const onBtnClick = useCallback(() => {
@@ -22,7 +22,7 @@ export const ${comName}: FunctionComponent = (): ReactElement => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <p>{count}</p>
       <button onClick={onBtnClick}>click me</button>
     </div>
@@ -33,7 +33,7 @@ ${comName}.displayName = '${comName}';`;
 };
 
 export const cssTemplate = (): string => {
-  return `.container {
+  return `.wrapper {
     background: #eee;
 }`;
 };
@@ -57,7 +57,7 @@ export const pageHtmlTemplate = (): string => {
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no" />
-        <title>新页面</title>
+        <title>new page</title>
     </head>
     <body>
         <div id="root"></div>

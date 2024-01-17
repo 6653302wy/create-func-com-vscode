@@ -18,7 +18,7 @@ const createFiles = async (path?: string) => {
     // 创建html文件
     await touchFile(htmlFile, pageHtmlTemplate());
 
-    vscode.window.showInformationMessage("页面创建成功!");
+    vscode.window.showInformationMessage("page has generated!");
     return;
   }
 };
@@ -69,7 +69,7 @@ export const startCreatePage = (uri: string) => {
   // console.log("当前所选路径是===", uri);
   folderPath = uri;
   showInputBox(
-    "请输入页面名",
+    "Please input your page name (请输入页面名)",
     (val) => {
       pageName = val;
       folderPath += `/${pageName}`;
@@ -83,6 +83,6 @@ export const startCreatePage = (uri: string) => {
       //   createFolders();
       // });
     },
-    "建议格式：test-page-name"
+    "recommend: test-page-name"
   );
 };

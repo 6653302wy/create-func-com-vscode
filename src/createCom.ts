@@ -14,7 +14,7 @@ const createCodeFiles = async () => {
   const cssFile = `${folderPath}/styles.css`;
   await touchFile(cssFile, cssTemplate());
 
-  vscode.window.showInformationMessage("组件模板创建成功!");
+  vscode.window.showInformationMessage("componenet has generated!");
 };
 
 // 创建文件夹
@@ -41,7 +41,7 @@ export const startCreateCom = (uri: string, comName?: string) => {
     createFolders();
   } else {
     showInputBox(
-      "请输入组件名",
+      "Please input your component name (请输入组件名)",
       (val) => {
         componenetName = firstUpperCase(val);
         folderPath += `/${componenetName}`;
@@ -49,7 +49,7 @@ export const startCreateCom = (uri: string, comName?: string) => {
 
         createFolders();
       },
-      "建议格式：TestComponentName"
+      "recommend: TestComponentName"
     );
   }
 };
