@@ -3,8 +3,8 @@ a vscode extension about react component generater
 [vscode Marketplace](https://marketplace.visualstudio.com/items?itemName=wanpp.create-func-com)
 
  
-1. page templates can be generated
-2. component templates can be generated
+1. component（function component） templates can be generated
+2. page templates can be generated
 
 ### install
 - [click the link](https://marketplace.visualstudio.com/items?itemName=wanpp.create-func-com) of Marketplace to install
