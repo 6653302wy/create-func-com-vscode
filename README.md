@@ -1,5 +1,5 @@
 # create-func-com 
-a vscode extension about react component generater 
+a vscode extension about react component generater   
 [vscode Marketplace](https://marketplace.visualstudio.com/items?itemName=wanpp.create-func-com)
 
  
@@ -7,7 +7,7 @@ a vscode extension about react component generater
 2. component templates can be generated
 
 ### install
-- click the link() of Marketplace
+- [click the link](https://marketplace.visualstudio.com/items?itemName=wanpp.create-func-com) of Marketplace to install
 - or in the vscode's EXTENSIONS menu to search 'create-func-com' and install
 
 ### use
