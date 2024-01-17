@@ -1,6 +1,5 @@
 # create-func-com 
 a vscode extension about react component generater
-generate the page template and component code directory of the react 
  
 1. page templates can be generated
 2. component templates can be generated
