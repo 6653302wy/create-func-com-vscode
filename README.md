@@ -1,4 +1,5 @@
 # create-func-com
+[中文版说明](https://github.com/6653302wy/create-func-com-vscode/blob/master/README.cn.md)
 
 a vscode extension about react component generater  
 [vscode Marketplace](https://marketplace.visualstudio.com/items?itemName=wanpp.create-func-com)
