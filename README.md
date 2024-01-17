@@ -1,8 +1,9 @@
 # create-func-com 
 a vscode extension about react component generater
- - generate the page template and component code directory of the react 
-  1. page templates can be generated
-  2. component templates can be generated
+generate the page template and component code directory of the react 
+ 
+1. page templates can be generated
+2. component templates can be generated
 
 ### use
 In the vscode explorer, select the root folder where the component needs to be created, and select the "Create React Functional Component" option from the right-click menu.
