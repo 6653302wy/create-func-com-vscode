@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "create-func-com" extension will be documented in this file.
+**0.2.3**
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Improve: update command clearly
 
-## [Unreleased]
+**0.2.2**
 
-- Initial release
+- Improve: commands and docs has changed in English. Please read the file of README.md
